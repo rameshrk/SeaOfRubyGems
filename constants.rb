@@ -24,3 +24,11 @@ puts Ticket::VENUES
 Ticket::A =2
 puts Ticket::A
 # puts Ticket.A
+
+puts
+venues = Ticket::VENUES
+venues << "One more"
+puts venues
+puts
+puts Ticket::VENUES
+
