@@ -17,7 +17,7 @@ module StackModule
   end
 
   def print_stack
-    puts stack
+    puts stack.to_ary
   end
 
 
