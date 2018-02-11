@@ -38,6 +38,13 @@ class C
     puts
   end
 
+
+  def C.y
+    puts "Class method C.y:"
+    puts "self is #{self} \n"
+    puts
+  end
+
   def m
 
     puts "Instance method C#m:"
@@ -46,12 +53,12 @@ class C
 
   end
 
+
+
   puts "Class definition block: completed"
   puts "self is #{self} \n"
   puts
 end
-
-
 
 
 puts "*****1*****", "\n"
@@ -84,6 +91,13 @@ def C.classmethod
   puts
 end
 
+def C.classmethod
+  puts "Class method redefined on C.classmethod2"
+  puts "self is #{self} \n"
+  puts
+end
+
+
 class E < C
 
 end
@@ -91,4 +105,8 @@ end
 C.classmethod
 
 E.x
-E.classmethod1
+E.classmethod
+
+E.y
+
+
