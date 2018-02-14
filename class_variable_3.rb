@@ -33,12 +33,23 @@ class Child < Parent
   @shared_things = []
 end
 
+puts "******"
+puts
+
 mama = Parent.new
 papa = Parent.new
 joey = Child.new
 suzy = Child.new
 
+puts "******"
+puts
+
+
 Parent.family_things << :house
+
+puts "******"
+puts
+
 papa.family_things << :vacuum
 mama.shared_things << :car
 papa.shared_things << :blender
@@ -47,6 +58,9 @@ joey.my_things << :bike
 suzy.my_things << :doll
 joey.shared_things << :puzzle
 suzy.shared_things << :blocks
+
+puts "******"
+puts
 
 p Parent.family_things #=> [:house, :vacuum]
 p Child.family_things #=> [:house, :vacuum]
