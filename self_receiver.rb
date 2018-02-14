@@ -18,6 +18,21 @@ class C
     @variable = 50
   end
 
+
+  def method_one
+    @var = "a variable"
+
+    puts @var
+  end
+
+  def method_two
+    puts @var
+    puts "\n"
+  end
+
+
+
+
 end
 puts "\n Starts"
 puts C.no_dot
@@ -38,3 +53,9 @@ puts c.variable()
 puts "\n Starts"
 c.no_dot =20
 puts c.no_dot
+
+
+
+c.method_two
+c.method_one
+c.method_two

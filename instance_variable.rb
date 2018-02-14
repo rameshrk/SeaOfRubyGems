@@ -3,6 +3,7 @@ class Parent
 
   def self.things
     puts "self.things"
+    puts @things
     @things
 
   end
@@ -38,6 +39,7 @@ puts
 puts "+++++"
 puts "Parent.things", Parent.things, "\n" #=> [:car]
 puts "Child.things", Child.things, "\n" #=> [:doll]
+puts "======"
 puts "mom.things", mom.things, "\n" #=> [:car]
 puts "dad.things", dad.things, "\n" #=> [:car]
 puts "kid1.things", kid1.things, "\n" #=> [:car]
